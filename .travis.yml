@@ -15,7 +15,7 @@ deploy:
     - build/libs/enable-later-executions-plugin*.jar
     - ui-enable-execution-later/build/distributions/ui-execution-mode-later*.zip
   on:
-    repo: rundeck-plugins/execution-mode-later-plugin
+    repo: ltamaster/execution-mode-later-plugin
     tags: true
   file_glob: true
   skip_cleanup: true
