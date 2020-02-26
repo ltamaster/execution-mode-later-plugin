@@ -11,7 +11,9 @@ deploy:
   provider: releases
   api_key:
     secure: qZ5az8v1Y20whrG0sOgtjt2SSJFdEVRIxEBIlgP5GchiUNuZ8RVNJrGBdeAxlZ0jNAisI3p+NH/4OobP1JeWEy30c8dBthy0EybMiNQtTnPMM0RqXXoDFTLwshhTMU1Xf7rlveuVw69ELkBnbnxH+t8B9LmfJYWqKG7/fXcnuX2Ebfge7KFTG4RPhmV10wYgSNr75qXApnG9du3/y5WQ3OmK9oWdwyNomry8PUgOlSwNynUMnK4NXvq+F57Ye11bxH7fVdHhdxLrsHoLFowHnoc9EBGqKnWDonuEqh7H6MvuTuJbliuxZrHfRSlpnZo7rSHDxJrqmn5tNnhKUZJY2CEWqu5dE64f65PTm69POPMPrxtJSVhoNHIsd9LEzUaS8JOPFw/J9AygC4WAcPz01UhWgCVuDyENMYQKrXekAWKUS05xHfwh1D+N7RYjfkdakoNQOsmiNAkj9iRZxloC595iakNeAK9Ar3fo13KpXtqfLQuyHBDCqKP+bx0ffXW4VjviasNE42W9fDSZGnYa8nSqdij5hXvpAQrZ5wl+v+g/LosO0dZeV+hiwsXa3YIyDf+AWj6xNNU9CtJGsf9UkxdoJ0/D92Ym6EGgdGbHnmFtf7QCsZgOy6k2ehkYg7Ksg6UdsUqAj0eiPQ8P4xHRW/lTKTTr1UYWcHl0AqH4sl0=
-  file: build/libs/*.jar
+  file: 
+    - build/libs/*.jar
+    - ui-enable-execution-later/build/distributions/*.zip
   on:
     repo: ltamaster/execution-mode-later-plugin
     tags: true
