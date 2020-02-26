@@ -137,7 +137,7 @@ task copySpa(type: Copy) {
 }
 
 tasks.build.dependsOn copySpa
-
+tasks.assemble.dependsOn copySpa
 task cleanSpa << {
     delete(copySpa.outputs)
     delete(buildDir)
